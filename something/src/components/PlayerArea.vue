@@ -15,11 +15,12 @@
 
     <div v-if="props.cards.length > 0">
       <transition-group name="fade">
-      <v-img height="50" width="50" class="mx-2 ma-1" v-for="(img, index) in props.cards" :key="index"
-        :src="cardImages(img)"></v-img>
+      <v-img height="70" width="70" class="my-3 ma-1 elevation-6 border-4" v-for="(img, index) in props.cards" :key="index"
+        :src="cardImages(img)" cover></v-img>
       </transition-group>
     </div>
 
+    
 
   </v-card>
 </template>

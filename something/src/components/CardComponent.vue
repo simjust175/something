@@ -1,9 +1,9 @@
 <template>
-  <v-card class="border-thin elevation-4" height="120" width="120" :id="props.current" >
+  <v-card class="border-thin elevation-5" height="120" width="120" :id="props.current" >
     <audio ref="flipSound" src="../../public/sounds/flipSound.mp3"></audio>
     <div class="card-inner" :class="{ flipped: !props.visible, invisible: props.taken }">
       <v-img :src="currentImg" height="120" width="120" class="front" cover></v-img>
-      <v-img src="/images/cover.jpeg" height="120" width="120" class="back" cover></v-img>
+      <v-img  src="/images/cover.jpeg" height="120" width="120" class="back" cover></v-img>
     </div>
   </v-card>
 </template>
